@@ -13,6 +13,8 @@ class Autoconf < Formula
   end
 
   keg_only :provided_until_xcode43
+  
+  depends_on "automake"
 
   def install
     ENV["PERL"] = "/usr/bin/perl"
